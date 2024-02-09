@@ -1,11 +1,25 @@
 {
-  "name": "CRUD API",
+  "name": "crud-api",
   "version": "1.0.0",
   "engines": {
     "node": ">=20.0.0"
   },
   "type": "module",
   "scripts": {
-    "start": "node app.js"
+    "start": "node src/app.ts",
+    "start:dev": "nodemon -I --exec node --experimental-specifier-resolution=node  --loader ts-node/esm ./src/app.ts",
+    "start:prod": "tsc && node dist/app.js",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.17",
+    "dotenv": "^16.4.1",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
   }
 }
