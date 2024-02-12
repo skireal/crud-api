@@ -8,11 +8,8 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "node",
-
- 
     "strict": true,
     "skipLibCheck": true,
- 
     "noUncheckedIndexedAccess": true,
     "strictNullChecks": true,
     "noUnusedLocals": true,
@@ -20,9 +17,7 @@
     "outDir": "dist",
     "removeComments": true,
     "resolveJsonModule": true,
-
     "sourceMap": true,
-
     "strictPropertyInitialization": false,
 
   },
